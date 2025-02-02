@@ -21,7 +21,7 @@ Dies ist ein einfaches Webprojekt, das ich nach der Absolvierung eines PHP-Kurse
 2. **Datenbank einrichten:**
    - Öffne phpMyAdmin über XAMPP.
    - Erstelle eine neue MySQL-Datenbank.
-   - Importiere die enthaltene `database.sql`-Datei (falls vorhanden).
+   - Erstelle eine neue Tabelle mit dem Namen entries.
 4. **Projekt starten:**
    - Speichere die Projektdateien im `htdocs`-Verzeichnis von XAMPP.
    - Rufe das Projekt über `http://localhost/dein-projektordner` auf.
