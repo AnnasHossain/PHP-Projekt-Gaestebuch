@@ -1,0 +1,226 @@
+*{
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Monsterrat', sans-serif;
+}
+
+body{
+    background:#fffcf7  ;
+}
+
+.container {
+    max-width: 45rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.guestbook-heading{
+    color: #5C3A1E;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem; /* rem heißt dass 3 mal so groß sein soll wie das font vom body*/
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+    letter-spacing: 0.1em; /* em bezieht sich auf die aktuelle Font-Size, also hier line 16 */
+}
+
+.guestbook-entry-label{
+    display: block; /* damit steht der Eingabetext allain als Zeile */
+    color: #4c5866;
+    font-size: 1rem;
+}
+.guestbook-entry-input{
+    -webkit-appearance: none; /* Damit unsere Styles für alle Geräte gelten */
+    appearance: none;
+    display: block;
+    width: 100%;
+    background-color: whitesmoke;
+    color: #4c5866;
+    border: 0.0625rem solid #4c5866;
+    font-family: inherit; /* Die Schriftart kann vererbt werden dadurch: Hier sage ich dass ich die Schriftart vom Body auch hier im Input haben möchte (das ist ein Ausnahmefeld da es ein eigenes sich gibt) */
+    line-height: 1.5rem;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px; /* abgerundete Ecken des Eingabefeld  */
+    margin-bottom: 0.75rem; /* Abstand vom Text zu darüberliegendem Eingabefeld */
+    margin-top: 0.25rem;
+}
+.guestbook-entry-input:focus{ /* Damit kann CSS-Regel aktivieren wenn dieses Eingabefeld (-entry-input) aktiviert wird) */
+    outline: none;
+    border: 0.0625rem solid #e97200;
+}
+
+.guestbook-form-buttons{
+    text-align: center;
+    color: #e97200;
+    border-radius: 5px;
+}
+
+.button{
+    font-family: inherit;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    border: 0px solid transparent; /*  Standard Rand wegmachen */
+    background-color: #e97200;
+    color: whitesmoke;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.button:hover{
+    background-color: #b35802;
+}
+
+.guestbook-separator{
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 0.03125rem solid #4c5866;
+}
+
+.guestbook-entry {
+    background-color: white;
+    color: #4c5866;
+    border: 0.0625rem solid #4c5866;
+    border-radius: 0.5rem;
+    padding: 1rem 1.25rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.guestbook-entry-title {
+    color: #e97200;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.25rem;
+}
+
+.guestbook-entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline; /* damit wird gesagt dass die Elemente im Tag die gleiche Höhe/Tiefe haben auch wenn sie eine andere Schriftgröße haben */
+}
+
+.guestbook-entry-author {
+    white-space: nowrap; /* kein Zeilenumbruch in dem tag im browser erlaubt */
+    max-width: 50%;  /* soll nur 50% der flexbox einnehmen  */
+    overflow: hidden;  /* Überschneidungen werden ausgeblendet */
+    text-overflow: ellipsis; /* abgeschnittener Text mir ... anzeigen */
+    text-align: right; /*  Text rechtsbündig */
+}
+
+.guestbook-entry-content > p { /* mit >p wird gesagt, dass alle elemente von DB kommen als direktes kind-element hier noch gestylt werden */
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+.guestbook-entry-content > p:last-child { /* last-child heißt hier dass es das letzte Element vom <div class="...-content" sein muss */
+    margin-bottom: 0;
+}
+
+.guestbook-pagination {
+    margin: 1.75rem -0.5rem;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.guestbook-pagination-a {
+    display: block; /* a-element ist standardmäßig in einem Textfluß drin--> muss umgewandelt werden in einem block Element  */
+    min-width: 2.5rem;
+    padding: 0.25rem 0.5rem;
+    background-color: #e97200;
+    color: white;
+    line-height: 1.5rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    text-align: center;
+    margin: 0.25rem 0.5rem;
+}
+.guestbook-pagination-a:hover {
+    background-color: #b35802;
+}
+
+.guestbook-pagination-active,
+.guestbook-pagination-active:hover {
+    background-color: #4c5866;
+}
+
+.guestbook-footer {
+    flex: unset;  /* flexbox zurücksetzen */
+    background-color: #f3e8dc;
+    color: #5C3A1E;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+    text-align: left;
+}
+
+.footer-section h3 {
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+    border-bottom: 2px solid rgba(92, 58, 30, 0.4);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-section p,
+.footer-section a {
+    font-size: 0.9rem;
+    color: #6d4b2e;
+    margin: 5px 0;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #e97200;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    background-color: #e0d3c1;
+    padding: 15px 0;
+    margin-top: 20px;
+    font-size: 0.85rem;
+    text-align: center;
+    border-top: 1px solid rgba(92, 58, 30, 0.3);
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        min-width: 100%;
+        margin-bottom: 15px;
+    }
+}
