@@ -32,7 +32,7 @@ http://www.annashossain-php-guestbook.de
 
 ## Nutzung 
 - Die Webseite aufrufen und einen Eintrag mit Namen und Titel verfassen.
-- Der Eintrag wird gespeichert und unterhalb angezeigt.
+- Der Eintrag wird gespeichert und unterhalb angezeigt. (aktuell wird der Eintrag auf der letzten Seite angezeigt)
 - Bei vielen Einträgen wird eine Seitennavigation generiert.
 
 ## Screenshots
