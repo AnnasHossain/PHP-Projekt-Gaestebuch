@@ -4,8 +4,6 @@ Dies ist ein einfaches Webprojekt, das ich nach der Absolvierung eines PHP-Kurse
 
 https://php-guestbook-3b8975bc7499.herokuapp.com
 
-http://www.annashossain-php-guestbook.de
-
 ## Funktionen
 - **Datenbankanbindung**: Speichert und lädt Einträge aus einer Datenbank.
 - **Eingabeformular**: Nutzer können Name, Titel und einen Eintrag eingeben und absenden.
