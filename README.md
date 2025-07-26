@@ -1,8 +1,6 @@
 # Mein PHP-Projekt
 
-Dies ist ein einfaches Webprojekt, das ich nach der Absolvierung eines PHP-Kurses selbstständig entwickelt habe. Es nutzt grundlegende PHP-Funktionalitäten, um eine minimale Sicherheit zu gewährleisten, und beinhaltet HTML und CSS für die Darstellung.
-
-https://php-guestbook-3b8975bc7499.herokuapp.com
+Dies ist ein einfaches Webprojekt, dass grundlegende PHP-Funktionalitäten nutzt, sowie minimale Sicherheit gewährleistet um Einträge CRUD Operationen durchzuführen. HTML und CSS wurde ebenfalls selbstständig bis zu bestimnte Teilen entwickelt.
 
 ## Funktionen
 - **Datenbankanbindung**: Speichert und lädt Einträge aus einer Datenbank.
