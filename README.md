@@ -32,7 +32,7 @@ Dies ist ein einfaches Webprojekt, dass grundlegende PHP-Funktionalitäten nutzt
 - Bei vielen Einträgen wird eine Seitennavigation generiert.
 
 ## Screenshots
-![Bild 26 01 25 um 17 35](https://github.com/user-attachments/assets/98281383-f552-479c-ba04-ed3711cb2d4a)
+![Bild 26 01 25 um 17 35](https://github.com/user-attachments/assets/75953883-d88f-4a1d-b6e3-51abe0212caa)
 
 ## Erweiterungsmöglichkeiten
 - **Login-System** für authentifizierte Benutzer.
